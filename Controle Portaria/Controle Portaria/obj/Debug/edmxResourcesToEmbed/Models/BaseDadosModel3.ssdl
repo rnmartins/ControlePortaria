@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PRESTADORModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRESTADOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="45" />
+    <Property Name="EMPRESA" Type="varchar" MaxLength="45" />
+    <Property Name="RG" Type="int" />
+    <Property Name="DATA" Type="datetime" />
+    <Property Name="HORARIO_ENTRADA" Type="datetime" />
+    <Property Name="AP" Type="int" />
+    <Property Name="BLOCO" Type="nchar" MaxLength="10" />
+    <Property Name="MORADOR" Type="varchar" MaxLength="50" />
+    <Property Name="HORARIO_SAIDA" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="PRESTADORModelStoreContainer">
+    <EntitySet Name="PRESTADOR" EntityType="Self.PRESTADOR" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

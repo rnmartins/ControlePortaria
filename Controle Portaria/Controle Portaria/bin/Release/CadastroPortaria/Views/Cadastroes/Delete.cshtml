@@ -1,0 +1,80 @@
+﻿@model Controle_Portaria.Models.Cadastro
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+<h2>Deletar</h2>
+
+<h3>Você quer mesmo deletar?</h3>
+<div>
+    <h4>Cadastro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TELEFONE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TELEFONE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BLOCO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BLOCO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CARRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CARRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PLACA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PLACA)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

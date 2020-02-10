@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VISITANTESModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="VISITANTE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RG" Type="Int32" />
+    <Property Name="DATA" Type="DateTime" Precision="3" />
+    <Property Name="HORARIO_ENTRADA" Type="DateTime" Precision="3" />
+    <Property Name="MORADOR" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AP" Type="Int32" />
+    <Property Name="BLOCO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="VISITANTESEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="VISITANTE" EntityType="Self.VISITANTE" />
+  </EntityContainer>
+</Schema>

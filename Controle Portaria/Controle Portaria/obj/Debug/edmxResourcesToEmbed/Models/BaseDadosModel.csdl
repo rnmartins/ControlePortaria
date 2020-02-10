@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CADASTROModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cadastro">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AP" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BLOCO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CARRO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PLACA" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="CADASTROEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cadastro" EntityType="Self.Cadastro" />
+  </EntityContainer>
+</Schema>

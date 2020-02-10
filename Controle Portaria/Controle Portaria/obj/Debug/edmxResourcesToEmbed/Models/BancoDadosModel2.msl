@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VISITANTESModelStoreContainer" CdmEntityContainer="VISITANTESEntities1">
+    <EntitySetMapping Name="VISITANTE">
+      <EntityTypeMapping TypeName="VISITANTESModel.VISITANTE">
+        <MappingFragment StoreEntitySet="VISITANTE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="RG" ColumnName="RG" />
+          <ScalarProperty Name="MORADOR" ColumnName="MORADOR" />
+          <ScalarProperty Name="AP" ColumnName="AP" />
+          <ScalarProperty Name="BLOCO" ColumnName="BLOCO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

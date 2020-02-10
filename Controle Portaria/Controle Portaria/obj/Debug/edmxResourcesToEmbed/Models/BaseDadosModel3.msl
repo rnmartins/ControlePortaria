@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PRESTADORModelStoreContainer" CdmEntityContainer="PRESTADOREntities">
+    <EntitySetMapping Name="PRESTADOR">
+      <EntityTypeMapping TypeName="PRESTADORModel.PRESTADOR">
+        <MappingFragment StoreEntitySet="PRESTADOR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="EMPRESA" ColumnName="EMPRESA" />
+          <ScalarProperty Name="RG" ColumnName="RG" />
+          <ScalarProperty Name="DATA" ColumnName="DATA" />
+          <ScalarProperty Name="HORARIO_ENTRADA" ColumnName="HORARIO_ENTRADA" />
+          <ScalarProperty Name="AP" ColumnName="AP" />
+          <ScalarProperty Name="BLOCO" ColumnName="BLOCO" />
+          <ScalarProperty Name="MORADOR" ColumnName="MORADOR" />
+          <ScalarProperty Name="HORARIO_SAIDA" ColumnName="HORARIO_SAIDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
